@@ -1,0 +1,22 @@
+# Theme configuration for the Joukowski Airfoil & Wing Designer.
+#
+# This is what actually pins the light theme. The CSS block in app.py is a
+# second layer for widgets the theme system does not reach; without this file
+# a visitor whose browser or Streamlit Cloud account prefers dark mode gets
+# dark chrome behind light plots, which was the readability problem.
+
+[theme]
+base = "light"
+primaryColor = "#2C5282"            # navy - buttons, focus rings, active tab
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#FAFBFD"  # metric cards, code blocks, expanders
+textColor = "#1A2332"
+font = "sans serif"
+
+[server]
+# Config JSON uploads are tiny; this keeps a stray large file from filling
+# the container.
+maxUploadSize = 5
+
+[browser]
+gatherUsageStats = false

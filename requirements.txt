@@ -1,0 +1,17 @@
+# Joukowski Airfoil & Wing Designer — Python dependencies
+#
+# Ranges, not hard pins: Streamlit Community Cloud installs these fresh on
+# every reboot, and a hard pin eventually stops resolving. Upper bounds keep
+# the next major release from breaking the app without warning.
+#
+# Verified working set (September 2026): streamlit 1.63.0, numpy 2.4.4,
+# pandas 3.0.2, matplotlib 3.10.8, plotly 7.0.0.
+#
+# If a future release does break something, pin the exact versions above with
+# == and reboot the app.
+
+streamlit>=1.32,<2
+numpy>=1.24,<3
+pandas>=2.0,<4
+matplotlib>=3.7,<4
+plotly>=5.18,<8
